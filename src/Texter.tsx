@@ -4,6 +4,8 @@ import { Button, NativeModules, StyleSheet, Text, useColorScheme, View } from 'r
 interface Props {
 }
 
+
+
 export const TexTer: React.FC<React.PropsWithChildren<Props>> = ({ children }) => {
   const [count, setCount] = React.useState(0)
 

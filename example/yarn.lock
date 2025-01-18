@@ -1206,11 +1206,6 @@
   resolved "https://registry.yarnpkg.com/@react-native/polyfills/-/polyfills-2.0.0.tgz#4c40b74655c83982c8cf47530ee7dc13d957b6aa"
   integrity sha512-K0aGNn1TjalKj+65D7ycc1//H9roAQ51GJVk5ZJQFb2teECGmzd86bYDC0aYdbRf7gtovescq4Zt6FR0tgXiHQ==
 
-"@rnx-kit/react-native-host@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@rnx-kit/react-native-host/-/react-native-host-0.5.2.tgz#a6d7503846501a4de3fdd995ce5d11f271aaa42b"
-  integrity sha512-m3vZlQgQIVIogHKWUsukn+kiDQid3zen+C9UOlzZ6mMzNoZ0onL6cs6np4jBQoOaUtXPV9I8yueS02vwvhKjWA==
-
 "@sideway/address@^4.1.3":
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.3.tgz#d93cce5d45c5daec92ad76db492cc2ee3c64ab27"

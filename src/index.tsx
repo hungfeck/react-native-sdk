@@ -1,14 +1,10 @@
 import * as React from 'react'
-import { Button, NativeModules, StyleSheet, Text, useColorScheme, View } from 'react-native'
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { Button, NativeModules, StyleSheet, Text, View } from 'react-native'
 import { TexTer } from '../src/Texter';
 
 export const addOne = (input: number) => input + 1
 
-interface Props {
-}
-
-export const Counter: React.FC<React.PropsWithChildren<Props>> = ({ children }) => {
+export const Counter = () => {
   const [count, setCount] = React.useState(0)
 
   return (
@@ -19,7 +15,7 @@ export const Counter: React.FC<React.PropsWithChildren<Props>> = ({ children }) 
   )
 }
 
-export { TexTer };
+
 
 const styles = StyleSheet.create({
   container: {
@@ -28,54 +24,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: 200,
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
 })
 
-type SectionProps = React.PropsWithChildren<{
-  title: string;
-}>;
-
-function SectionTest({ children, title }: SectionProps): any {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
-
-export { SectionTest }
+export { TexTer }
 
 export default NativeModules.RNModuleTemplateModule
