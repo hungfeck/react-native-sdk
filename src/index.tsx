@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Button, NativeModules, StyleSheet, Text, useColorScheme, View } from 'react-native'
-import { Colors } from 'react-native/Libraries/NewAppScreen'
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { TexTer } from '../src/Texter';
 
 export const addOne = (input: number) => input + 1
 
@@ -17,6 +18,8 @@ export const Counter: React.FC<React.PropsWithChildren<Props>> = ({ children }) 
     </View>
   )
 }
+
+export { TexTer };
 
 const styles = StyleSheet.create({
   container: {
